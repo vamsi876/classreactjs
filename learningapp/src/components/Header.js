@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Footer from  "./Footer"
+export default function Header({name, setName}) {
 
-export default function header() {
+  function handleClick(){
+    setName("herovired")
+  }
+  function returnn(){
+    setName("hero")
+  }
   return (
-    <div className='heading'>
-        <h1>Header</h1>
-        <p style ={{color:"red"}}>Contact Us</p>
+    
+    
+    <div>
+      this is header: welcome to react 
+      <div>
+        your name is : {name}
+        <button onClick={handleClick}>change</button>
+        <button onClick={returnn}>return</button>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,7 @@
-function Hello(){
-    return(<>
-    Hello worls!</>)
+import React from 'react'
+
+export default function hello() {
+  return (
+    <div></div>
+  )
 }
-export default Hello
